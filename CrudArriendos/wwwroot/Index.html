@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Dueños</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Gestión de Dueños</h1>
+
+    <!-- Formulario para crear o actualizar -->
+    <div>
+        <h2>Crear / Actualizar Dueño</h2>
+        <form id="duenoForm">
+            <input type="number" id="duenoId" placeholder="ID" required>
+            <input type="text" id="duenoNombre" placeholder="Nombre" required>
+            <input type="text" id="duenoTelefono" placeholder="Teléfono" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <!-- Tabla para listar Dueños -->
+    <div>
+        <h2>Lista de Dueños</h2>
+        <table border="1" id="duenoTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenan los dueños -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="dueno.js"></script>
+</body>
+</
